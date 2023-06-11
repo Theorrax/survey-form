@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+  </head> 
+  <header>
+    <div class="container">
+    <img src="https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg" alt="header photo" style="width:100%">
+    <div class="centered">
+      <h1 id="title">freecodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+   </div>
+  </header> 
+  <body>
+     <form id="survey-form" class="form" method="post" action="#">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" name="name" placeholder="Enter your name" required></label> 
+        <label  id="email-label">Email <input id="email" type="email" placeholder="email@domain.com" required></label>
+        <label id="number-label" for="number">Age (optional)<input id="number" type="number" placeholder="Age" min="10" max="120"></label>
+      </fieldset>
+      <fieldset>
+        <label id="recommendation">Would you recommend freecodeCamp to a friend? </label>
+        <label><input type="radio" class="class-radio" value="Definitely" name="user-recommend"> Definitely</label>
+        <label><input type="radio" class="class-radio" value="Maybe" name="user-recommend"> Maybe</label>
+        <label><input type="radio" class="class-radio" value="Not-Sure" name="user-recommend"> Not Sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite feature of freecodeCamp?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">Select an Option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (check all that apply)</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="front-end">Front-end Projects</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="back-end">Back-end Projects</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="data-visualization">Data Visualization</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="challenges">Challenges</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="open-source">Open Source</label>
+        <label><input type="checkbox" class="class-check"
+name="checkbox" value="gitter">Gitter help room</label>
+        <label><input type="checkbox"
+class="class-check" name="checkbox" value="videos">Videos</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="meetups">City Meetups</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="wiki">Wiki</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="forum">Forum</label>
+        <label><input type="checkbox" class="class-check" name="checkbox" value="courses">Additional Courses</label>
+      </fieldset>
+      <fieldset>
+        <label for="feedback">Any comments or suggestions?
+          <textarea id="feedback" name="feedback" rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" name="submit">
+    </form>
+  </body>
+  <footer class="copyright"> 
+    <p class="author">Author: Theorrax</p>
+    <div class="github-logo">
+    <a href="https://github.com/Theorrax"><img src="https://allvectorlogo.com/img/2021/12/github-logo-vector.png" alt="GitHub profile link"/></a>
+    </div>
+  </footer>
+</html>
